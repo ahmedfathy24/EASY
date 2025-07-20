@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  @if (product) {
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <img [src]="product.image || 'assets/placeholder.jpg'" [alt]="product.name" class="img-fluid rounded" style="max-height: 250px; object-fit: cover;">
+      </div>
+      <div class="col-md-6">
+        <h2>{{ product.name }}</h2>
+        <p class="text-muted">{{ product.category }}</p>
+        <p>{{ product.description }}</p>
+        <h4 class="text-primary">${{ product.price }}</h4>
+        @if (!isAdmin()) {
+          <button class="btn btn-success mt-3">Add to Cart</button>
+        }
+        <a routerLink="/products" class="btn btn-outline-secondary mt-3 ms-2">Back to Products</a>
+      </div>
+    </div>
+  }
+</div>

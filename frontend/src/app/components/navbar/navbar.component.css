@@ -1,0 +1,15 @@
+nav{
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    position:  sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-link{
+    color:rgb(209, 203, 203)!important;;
+    transition: 0.4s ease-in-out;
+    cursor: pointer ;
+}
+.nav-link:hover{
+    color: #479dff !important;
+}
