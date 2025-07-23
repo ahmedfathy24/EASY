@@ -44,12 +44,12 @@ The platform provides a seamless shopping experience with secure authentication,
    git clone https://github.com/your-username/EASY-store.git
    cd EASY-store
 
-#**-Setup Backend:**
--cd backend
--npm install
--npm start
+2. **-Setup Backend:**
+- cd backend
+- npm install
+- npm start
 
-#**-Setup Frontend:**
--cd frontend
--npm install
--ng serve -o
+3. **-Setup Frontend:**
+- cd frontend
+- npm install
+- ng serve -o
