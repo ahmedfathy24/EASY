@@ -5,11 +5,6 @@ The platform provides a seamless shopping experience with secure authentication,
 
 ---
 
-## 🚀 Live Demo
-*(Add your deployed link here once available)*
-
----
-
 ## ✨ Features
 - **User Authentication & Authorization:** JWT-based login and registration.
 - **Product Management:** Browse products with details (price, description, and images).
@@ -49,12 +44,12 @@ The platform provides a seamless shopping experience with secure authentication,
    git clone https://github.com/your-username/EASY-store.git
    cd EASY-store
 
-#-Setup Backend:
-cd backend
-npm install
-npm start
+#**-Setup Backend:**
+-cd backend
+-npm install
+-npm start
 
-#-Setup Frontend:
-cd frontend
-npm install
-ng serve -o
+#**-Setup Frontend:**
+-cd frontend
+-npm install
+-ng serve -o
