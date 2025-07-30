@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../../services/product.service';
 import { AuthService } from '../../../services/auth.service';
+import { CartService } from '../../../services/cart.service';
+
 
 @Component({
   selector: 'app-product-details',
@@ -18,7 +20,8 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
-    private authService: AuthService
+    private authService: AuthService,
+    private cartService: CartService
   ) {}
 
   ngOnInit() {
@@ -34,4 +37,19 @@ export class ProductDetailsComponent implements OnInit {
   isAdmin(): boolean {
     return this.authService.isAdmin();
   }
+
+  addToCart(productId: string) {
+    console.log("Adding product:", productId);
+    this.cartService.addToCart(productId, 1).subscribe({
+      next: (res) => {
+        console.log("CART RES:", res);
+        alert("Product added to cart!");
+      },
+      error: (err) => {
+        console.error("ERROR ADD CART:", err);
+        alert("Error adding to cart: you must be logged in");
+      }
+    });
+  }
+
 }

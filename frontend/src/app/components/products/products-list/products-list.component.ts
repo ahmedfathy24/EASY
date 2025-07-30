@@ -41,7 +41,7 @@ export class ProductsComponent implements OnInit {
       },
       error: (err) => {
         console.error("ERROR ADD CART:", err);
-        alert("Error adding to cart: " + (err.error?.message || 'Unknown error'));
+        alert("Error adding to cart: you must be logged in");
       }
     });
   }

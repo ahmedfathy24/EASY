@@ -13,3 +13,12 @@ nav{
 .nav-link:hover{
     color: #479dff !important;
 }
+.nav-link-danger{
+    text-decoration: none;
+    color:rgb(209, 203, 203)!important;;
+    transition: 0.4s ease-in-out;
+    cursor: pointer ;
+}
+.nav-link-danger:hover{
+    color: #ff0000 !important;
+}

@@ -1,8 +1,14 @@
-<div class="bg-light p-5 rounded shadow text-center">
-  <h1 class="display-4 fw-bold">Welcome to <span class="text-primary"> EASY </span> Store</h1>
-  <p class="lead">Discover amazing products at great prices!</p>
-  <hr class="my-4">
-  <p>Browse our collection of high-quality products and find exactly what you're looking for.</p>
-  <a class="btn btn-primary btn-lg mt-2" routerLink="/products" role="button">Shop Now</a>
+<div class="bg-light p-5 rounded shadow">
+  <div class="d-flex justify-content-between align-items-center flex-wrap gap-4 mx-5">
+    <div class="text-start">
+      <h1 class="display-4 fw-bold">Welcome to <span style="color: #007bff;"> EASY </span> Store</h1>
+      <p class="lead text-muted">The easiest way to shop for electronics and smart gadgets.</p>
+    </div>
+    <div>
+    <a routerLink="/products" class="btn btn-lg px-5 py-3 fw-semibold text-white " style="background: linear-gradient(135deg, #007bff, #0056b3); border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3); transition: all 0.3s ease; margin-right: 100px;">Shop Now</a>
+    </div>
+  </div>
 </div>
+<section class="container mt-5" >
 <app-latest></app-latest>
+</section>

@@ -1,0 +1,6 @@
+a.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+  }
+  
