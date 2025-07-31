@@ -31,9 +31,9 @@ export const getProductById = async (req, res) => {
 
 export const createProduct = async (req, res) => {
     try {
-        const product = new productModel(req.body);
-        await product.save();
-        res.status(201).json({ message: 'Product created', product });
+        const products = Array.isArray(req.body) ? req.body : [req.body];
+        const savedProducts = await productModel.insertMany(products);
+        res.status(201).json({ message: 'Products created', products: savedProducts });
     } catch (err) {
         res.status(500).json({ message: 'Server error', error: err.message });
     }
